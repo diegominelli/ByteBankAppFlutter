@@ -15,6 +15,21 @@ class Bytebankapp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Dashboard'),
         ),
+        body: Column(
+          children: <Widget>[
+            Image.asset('images/bytebank_logo.png'),
+            // ignore: avoid_unnecessary_containers
+            Container(
+              color: Colors.green,
+              child: Column(
+                children: const <Widget>[
+                  Icon(Icons.people),
+                  Text('Contacts'),
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
